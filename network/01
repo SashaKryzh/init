@@ -1,1 +1,1 @@
-ifconfig -a | grep mtu | cut -d : -f 1
+ifconfig | grep mtu | cut -d : -f 1
