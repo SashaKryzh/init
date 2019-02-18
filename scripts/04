@@ -4,7 +4,7 @@ if [ -e /etc/tmp.md5 ]
 then
 	if ! md5sum -c /etc/tmp.md5
 	then
-		echo "Differ!" | mail -s "Differ!" root
+		mail -s "Differ" root
 		md5sum /etc/crontab > /etc/tmp.md5
 	fi
 else
